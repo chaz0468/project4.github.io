@@ -1,0 +1,78 @@
+<!DOCTYPE html >
+<html lang="en">
+  <head>
+    <!-- instructing the browser to use a local copy of information instead of requesting a new copy from the server if within the 600 sec timeframe -->
+  	<meta http-equiv="Cache-Control" content="max-age=600"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Karl Haiden portfolio">
+    <meta name="author" content="Karl Haiden">
+    <title>Karl Haiden: Portfolio</title>
+    <!-- minified the print.css file -->
+    <link href="css/printmini.css" rel="stylesheet" media="print">
+    <!-- removed the style.css from the head
+    <link href="css/style.css" rel="stylesheet"> -->
+    <script>
+      (function(w,g){w['GoogleAnalyticsObject']=g;
+      w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments)};w[g].l=1*new Date();})(window,'ga');
+      // TODO: replace with your Google Analytics profile ID.
+      ga('create', 'UA-XXXX-Y');
+      ga('send', 'pageview');
+    </script>
+    <!-- added they async to the next line to improve performance -->
+    <script async src="http://www.google-analytics.com/analytics.js"></script>
+    <script async src="js/perfmatters.js"></script>
+  </head>
+  <body>
+  	 <script>  	 
+      var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = 'css/style_mini.css';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(cb);
+      else window.addEventListener('load', cb);
+    </script>    
+    <header>
+      <a href="/"><img src="img/profilepicchaz.jpg"></a>
+      <p>Karl Haiden<br><span>Project Manager</span></p>
+    </header>
+    <div class="container">
+      <div class="hero">
+        <strong>Project Manager</strong>
+        <p>I've worked in project management for 15 years and have been very lucky in my career.</p>
+		<p>When I said lucky, I meant that I also get to work on computers, everything from programing to creating or maintaining websites.  So I get to do things I love to do while I'm at work.</p>
+		<p>So, to continue my education, I'm working through my nano degree with Udacity, in hopes it will make me a stronger employee.</p>
+     	</div>
+      <div class="content">
+        <ul>
+          <li>
+            <img src="https://lh4.ggpht.com/kJEnfqhPvtm4m3EneSZ4fWYGS8lW4YNhEjk6zPkyrQaBUHc-2Y_ElDic99NHI0h-UBLXVbRCjFybFvrWxdk=s100">
+            <a href="project-2048.html">Build Your Own 2048!</a>
+            <p>What the hell is a "2048"?, I have not tried to build this.</p>
+          </li>
+          <li>
+            <img src="https://lh6.ggpht.com/f_0W8h__3G99CWTjnMjD8BUKm7yp2-wJyApLtTwFoFtlal2ULf_JgHIsOQq2NiYfKOdMlXlMHDKNo5XVZLs=s100">
+            <a href="project-webperf.html">Website Performance Optimization</a>
+            <p>This was good class for this who want to try it.</p>
+          </li> 
+          <li>
+            <img src="https://lh5.ggpht.com/IKdCmTWn8a2nMhlwMYzryvzRN5CUZAOBr4tDrEAbszV7TIFe9pRAInA4kkYcgTXwrifJsBEsq1agTueuu-g=s100">
+            <a href="project-mobile.html">Mobile Web Development</a>
+            <p>Making mobile apps isn't so hard after all. This is another class I have done much with.</p>
+          </li>     
+          <li>
+            <img style="width: 100px;" src="views/images/pizzeria.jpg">
+            <a href="views/pizza.html">Pizzeria</a>
+            <p>Who wants a performant pizza?  I've update this page as part of the class.</p>
+          </li>
+        </ul>
+       </div>
+    </div>
+    <footer>
+      <p>&copy; Web Performance 2014 <span id="crp-stats"></span></p>
+    </footer>
+  </body>
+</html>
