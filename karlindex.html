@@ -8,10 +8,14 @@
     <meta name="description" content="Karl Haiden portfolio">
     <meta name="author" content="Karl Haiden">
     <title>Karl Haiden: Portfolio</title>
+
+<!-- Hmm, what is the impact of web fonts on speed? Measure it...
+corrected broken link..  added http:// -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+
     <!-- minified the print.css file -->
     <link href="css/printmini.css" rel="stylesheet" media="print">
-    <!-- removed the style.css from the head
-    <link href="css/style.css" rel="stylesheet"> -->
+    <link href="css/stylemini.css" rel="stylesheet">
     <script>
       (function(w,g){w['GoogleAnalyticsObject']=g;
       w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments)};w[g].l=1*new Date();})(window,'ga');
@@ -24,19 +28,8 @@
     <script async src="js/perfmatters.js"></script>
   </head>
   <body>
-  	 <script>  	 
-      var cb = function() {
-        var l = document.createElement('link'); l.rel = 'stylesheet';
-        l.href = 'css/style_mini.css';
-        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
-      };
-      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-          webkitRequestAnimationFrame || msRequestAnimationFrame;
-      if (raf) raf(cb);
-      else window.addEventListener('load', cb);
-    </script>    
-    <header>
-      <a href="/"><img src="img/profilepicchaz.jpg"></a>
+  	 <header>
+      <a><img src="img/profilepicchaz.jpg"></a>
       <p>Karl Haiden<br><span>Project Manager</span></p>
     </header>
     <div class="container">
