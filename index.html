@@ -1,8 +1,6 @@
 <!DOCTYPE html >
 <html lang="en">
   <head>
-    <!-- instructing the browser to use a local copy of information instead of requesting a new copy from the server if within the 600 sec timeframe -->
-  	<meta http-equiv="Cache-Control" content="max-age=600"/>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Karl Haiden portfolio">
@@ -51,8 +49,6 @@ corrected broken link..  added http:// -->
       ga('create', 'UA-XXXX-Y');
       ga('send', 'pageview');
     </script>
-    <!-- added they async to the next line to improve performance -->
-    <script async src="http://www.google-analytics.com/analytics.js"></script>
     <script async src="js/perfmatters.js"></script>
   </head>
   <body>
@@ -95,5 +91,8 @@ corrected broken link..  added http:// -->
     <footer>
       <p>&copy; Web Performance 2014 <span id="crp-stats"></span></p>
     </footer>
+        <!-- added they async to the next line to improve performance  and moved to the bottom of the page per Udacity suggestion for better
+        performance-->
+    <script async src="http://www.google-analytics.com/analytics.js"></script>
   </body>
 </html>
