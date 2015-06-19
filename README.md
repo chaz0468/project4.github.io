@@ -14,6 +14,8 @@ shrunk the pizza and pizzeria images http://jpeg-optimizer.com/ using http://tin
 Under updateposition, I've tried a couple different approaches and rem out what I didn't use.
 changed how the randow pizza appear.
 
+// replaced querySelectorAll with getElementsByClassName
+
 Websites,
 
 Github.com
