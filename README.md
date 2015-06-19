@@ -21,3 +21,8 @@ Github.com
 http://www.webpagetest.org/
 http://cssminify.com/
 
+how to run the application:
+1- go to my githubpage at https://github.com/chaz0468/project4.github.io
+2- use the download zip file feature on the leftside page.
+3- unzip the to your favorite directory
+4- go to the new directory and open index.html with "Chrome"
