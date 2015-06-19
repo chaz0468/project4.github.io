@@ -6,6 +6,7 @@
     <meta name="description" content="Karl Haiden portfolio">
     <meta name="author" content="Karl Haiden">
     <title>Karl Haiden: Portfolio</title>
+    <!-- inlining my css file vs linking to the external file -->
 <style type="text/css">
         html{font-size:100%;overflow-y:scroll;-webkit-tap-highlight-color:rgba(0,0,0,0);-ms-text-size-adjust:100%;-webkit-text-size-adjust:none;}
         body{margin:0;font-size:14px;line-height:1.61;font-weight:400;}
@@ -36,12 +37,11 @@
         }
     </style>
 <!-- Hmm, what is the impact of web fonts on speed? Measure it...
-corrected broken link..  added http:// -->
+corrected broken link..  added http://.  remmed out for performance speed-->
 <!--    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> -->
 
     <!-- minified the print.css file -->
     <link href="css/printmini.css" rel="stylesheet" media="print">
-  <!--  <link href="css/stylemini.css" rel="stylesheet"> -->
     <script>
       (function(w,g){w['GoogleAnalyticsObject']=g;
       w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments)};w[g].l=1*new Date();})(window,'ga');
@@ -91,8 +91,8 @@ corrected broken link..  added http:// -->
     <footer>
       <p>&copy; Web Performance 2014 <span id="crp-stats"></span></p>
     </footer>
-        <!-- added they async to the next line to improve performance  and moved to the bottom of the page per Udacity suggestion for better
-        performance-->
+        <!-- added the async to the front of the line to improve performance and moved to the bottom of the page per Udacity 
+        suggestion for better performance-->
     <script async src="http://www.google-analytics.com/analytics.js"></script>
   </body>
 </html>
