@@ -9,7 +9,7 @@ added my data and image to the page.
 
 for the index.html Modified a couple area
 moved mutliple functions outside their loops, to improve performance
-shrunk the pizza and pizzeria images http://jpeg-optimizer.com/ using tinypng.com website
+shrunk the pizza and pizzeria images http://jpeg-optimizer.com/ using http://tinypng.com website
 
 Under updateposition, I've tried a couple different approaches and rem out what I didn't use.
 changed how the randow pizza appear.
@@ -21,8 +21,8 @@ Github.com
 http://www.webpagetest.org/
 http://cssminify.com/
 
-how to run the application:
-1- go to my githubpage at https://github.com/chaz0468/project4.github.io
-2- use the download zip file feature on the leftside page.
-3- unzip the to your favorite directory
-4- go to the new directory and open index.html with "Chrome"
+>how to run the application:
+1. go to my githubpage at https://github.com/chaz0468/project4.github.io
+2. use the download zip file feature on the leftside page.
+3. unzip the to your favorite directory
+4. go to the new directory and open index.html with "Chrome"
