@@ -7,11 +7,11 @@
 PageSpeed Insights for **index.html**  http://chaz0468.github.io/project4.github.io
 <ul>
 	<li>Mobile: 95/100</li>
-	<li>Desktop: 97/100</li>
+	<li>Desktop: 96/100</li>
 </ul>
 To achieve these scores I 
 <ol>
-	<li>Compressed the image pizzaria.jpg from its original size2,315 kb to 366kb</li>
+<li>Resized the image pizzaria.jpg from its original size of 2048 x 1536 to 100 x 75 px</li>
     <li>changed data to my informatino vs camron)</li>
     <li>Minified print.css (print_mini.css)</li>
     <li>Added media="print" to print_mini.css ref</li>
