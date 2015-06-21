@@ -45,7 +45,7 @@ To achieve these scores I
  	<li><a href="https://developer.chrome.com/devtools/docs/demos/too-much-layout/index">Google Timeline demo</a></li>
  	<li><a href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fchaz0468.github.io%2Fproject4.github.io&tab=mobile">PageSpeed Insights</a></li>
  	<li><a href="https://developer.chrome.com/devtools/docs/network">Evaluating network performance</a></li>
- 	<li><a href="//jpeg-optimizer.com/">jpeg compressor</a></li>
+ 	<li><a href="http//jpeg-optimizer.com/">jpeg compressor</a></li>
  	<li><a href="http://tinypng.com">png compressor</a></li>
  	<li><a href="http://cssminify.com/">css minifier</a></li>
  </ul>
