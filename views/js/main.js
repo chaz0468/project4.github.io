@@ -420,16 +420,14 @@ var resizePizzas = function(size) {
   }
 
 // These will be initialized below after the random pizzas are generated
-var randomPizzaContainers = null;
-var windowwidth = null;
 
   changeSliderLabel(size);
 
   // Returns the size difference to change a pizza element from one size to another. Called by changePizzaSlices(size).
  // added windwowwidth to the function
-  function determineDx (elem, size, windowwidth) {
+  function determineDx (elem, size) {
     var oldwidth = elem.offsetWidth;
-    var windowwidth = document.querySelector("#randomPizzas").offsetWidth;
+    windowwidth = document.querySelector("#randomPizzas").offsetWidth;
     var oldsize = oldwidth / windowwidth;
 
     // TODO: change to 3 sizes? no more xl?
@@ -454,14 +452,16 @@ var windowwidth = null;
   }
 
   // Iterates through pizza elements on the page and changes their widths
-  // put ramdowPizzaContainers and Windowwidth outside loop to improve speed
-  var dx = determineDx(randomPizzaContainers[i], size, windowwidth);
+  
+//moved the .querySelectorAll outside of for loop
   function changePizzaSizes(size) {
-    for (var i = 0; i < randomPizzaContainers.length; i++) {
-      randomPizzaContainers[i].style.width = (randomPizzaContainers[i].offsetWidth + dx) + 'px';
-    }
+  var dx = determineDx(document.querySelector(".randomPizzaContainer"), size);
+  var newwidth = (document.querySelector(".randomPizzaContainer").offsetWidth + dx) + 'px';
+  var elements = document.querySelectorAll(".randomPizzaContainer");
+  for (var i = elements.length; i--;) {
+  elements[i].style.width = newwidth;
   }
-
+ }
   changePizzaSizes(size);
 
   // User Timing API is awesome
@@ -534,11 +534,13 @@ function updatePositions() {
 // runs updatePositions on scroll
 window.addEventListener('scroll', updatePositions);
 
-// Generates the sliding pizzas when the page loads.  reduced px size of pizza by 50%
+// Generates the sliding pizzas when the page loads. Compressed pizza.png
+//to reduce pizza size  
 document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
-  for (var i = 0; i < 55; i++) {
+  //reduced the number of pizzas to 48
+  for (var i = 0; i < 48; i++) {
     var elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
